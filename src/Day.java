@@ -7,11 +7,6 @@ public enum Day {
     SATURDAY("Суббота"),
     SUNDAY("Воскресенье");
 
-    public static void main(String[] args) {
-        for (Day day : Day.values()) {
-            System.out.println(day.getRusName() + " is weekend: " + day.isWeekend());
-        }
-    }
 
     private String rusName;
 
@@ -27,4 +22,10 @@ public enum Day {
         return rusName;
     }
 
+    public static void main(String[] args) {
+        for (Day day : Day.values()) {
+            System.out.println(day.getRusName() + " is weekend: " + day.isWeekend());
+        }
+
+    }
 }
